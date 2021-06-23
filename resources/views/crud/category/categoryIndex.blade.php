@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1>カテゴリー一覧</h1>
-        <div class="create">[<a href="/crud/index2021/create">カテゴリーを作成する</a>]</div>
+        <div class="create">[<a href="/crud/index2021/category/create">カテゴリーを作成する</a>]</div>
         <div class='posts'>
            
                 <div class='allCategories'>
