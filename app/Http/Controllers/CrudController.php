@@ -121,7 +121,6 @@ class CrudController extends Controller
 	{
 		$category = new category();
 		$category->name = $request->name;
-		$category->explain_sentence = $request->explain_sentence;
 
 
 		$category->save();
