@@ -1,0 +1,166 @@
+@media (max-width:959px){
+.pc{
+    display:none;
+}
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url("/images/mobile-images/background.png");
+}
+#title-box {
+    text-align: center;
+    position: relative;
+    height:80px;
+}
+#page-title {
+    width:300px;
+    padding: 0;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #707070;/*文字色*/
+    background-color: #fff;
+    border: solid 3px #dec6a0;/*線*/
+    border-radius: 25px;/*角の丸み*/
+    position: relative;
+    z-index: 20;
+}
+#page-explain {
+    width:320px;
+    background: #fff;
+    font-size:18px;
+    color:#a89e9e;
+    box-shadow: 0px 0px 0px 10px #fff;
+    border: dashed 2px #dec6a0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+}
+#page-explain p {
+    margin: 0; 
+    padding-top: 50px;
+    padding-bottom:40px;
+}
+
+#mobile-buttons{
+    margin-top:160px;
+    text-align: center;
+}
+.name{
+	font-size: 30px;
+	color:#a89e9e;
+}
+.explanation{
+    padding: 5px 10px;
+	width:300px;
+	background: #fff;
+	border: dashed 2px #dec6a0;
+	border-radius: 25px;
+	color: #a89e9e;
+	font-size:15px;
+	margin:0 auto;
+}
+.back{
+    margin-top: 40px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+}
+/*パソコン用表示画面*/
+@media (min-width:960px){
+.mobile{
+    display:none;
+}
+/*背景を追加*/
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background-image: url("/images/pc-images/background.png");
+}
+/*ページタイトルの装飾*/
+#title-box {
+    text-align: center;
+    position: relative;
+    height:300px;
+}
+#page-title {
+    width:500px;
+    padding: 0;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #707070;/*文字色*/
+    background-color: #fff;
+    border: solid 3px #dec6a0;/*線*/
+    border-radius: 25px;/*角の丸み*/
+    position: relative;
+    z-index: 20;
+}
+
+#page-explain {
+    width:700px;
+    background: #fff;
+    font-size:38px;
+    color:#a89e9e;
+    box-shadow: 0px 0px 0px 10px #fff;
+    border: dashed 2px #dec6a0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+}
+#page-explain p {
+    margin: 0; 
+    padding-top: 50px;
+    padding-bottom:40px;
+}
+/*フレックスボックスで画像とテキストを並べる*/
+#category-names {
+	display: flex;
+	flex-direction: row;
+}
+.name{
+    margin: 10px auto;
+	padding: 5px 10px;
+	font-size: 60px;
+	color:#a89e9e;
+}
+#buttons{
+    display:flex;
+    flex-direction: row;
+}
+.pc{
+    margin: 10px auto;
+	padding: 5px 10px;
+}
+#explanations{
+    display:flex;
+    flex-direction: row;
+}
+.explanation{
+    margin: 10px auto;
+	padding: 5px 10px;
+	width:380px;
+	background: #fff;
+	border: dashed 2px #dec6a0;
+	border-radius: 25px;
+	color: #a89e9e;
+	font-size:23px;
+}
+/*backボタンの装飾*/
+.back{
+    margin-top: 40px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+}
