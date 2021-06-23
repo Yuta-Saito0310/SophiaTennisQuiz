@@ -1,0 +1,283 @@
+/*スマホ用表示*/
+@media (max-width:959px){
+.pc{
+  display:none !important;
+}
+#result,.correctCircle,.uncorrectCircle,.explain_sentence{
+  display:none;
+}
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url("/images/mobile-images/background.png");
+}
+#page-title {
+    width:300px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #707070;/*文字色*/
+    background-color: #fff;
+    border: solid 3px #dec6a0;/*線*/
+    border-radius: 25px;/*角の丸み*/
+    text-align: center;
+}
+.quizTitle {
+    width:360px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #707070;/*文字色*/
+    background-color: #fff;
+    border: solid 3px #a89e9e;/*線*/
+}
+.quizNumber p{
+  font-size:20px;
+  margin-left:10px;
+  margin-top:5px;
+}
+.quizSentence p{
+  margin-top:0;
+  margin-left:10px;
+  font-size: 15px
+}
+/*吹き出しの位置を調整*/
+.quiz{
+  position:relative;
+  margin-top:70px;
+}
+.correctCircle,.uncorrectCircle{
+  position:absolute;
+  top:-35px;
+  right:50px;
+}
+.explain_sentence{
+  margin: 10px auto;
+	padding: 5px 10px;
+	width:300px;
+	background: #fff;
+	border: dashed 2px #ec78ab;
+	border-radius: 25px;
+	color: #a89e9e;
+	font-size:15px;
+}
+#radioForm{
+  width:100%;
+}
+
+/*ラジオボタンの装飾*/
+.radio-inline__input {
+  display:none;
+}
+
+.radio-inline__label {
+  display: block; /* ブロックを作るように */
+  margin:15px auto;
+  width:300px;
+  text-align: center;
+  border: solid 3px #85c671;
+  border-radius: 30px;
+  background: #fff;
+  color: #707070;
+  text-shadow: 0 0 1px rgba(0,0,0,.7);
+}
+
+.radio-inline__input:checked + .radio-inline__label {
+  background: #85c671;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0,0,0,.7);
+}
+
+.radio-inline__input:focus + .radio-inline__label {
+  outline-color: #4D90FE;
+  outline-offset: -2px;
+  outline-width: 5px;
+}
+
+.explain_blue{
+  background-color: lightblue;
+}
+.explain_red{
+  background-color: pink;
+}
+#result{
+  margin: 10px auto;
+	padding: 5px 10px;
+	width:300px;
+	background: #dec6a0;
+	border: none;
+	border-radius: 25px;
+	color: #fff;
+	font-weight: bold;
+	font-size:20px;
+	text-align: center;
+}
+#check {
+  margin: 50px auto;
+	width:120px;
+}
+#check a{
+  margin: 10px auto;
+	padding: 5px 10px;
+  color: #fff;
+  background-color: #dec6a0;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.back{
+    margin-top: 40px;
+    text-align: center;
+}
+.back a{
+  text-decoration: none;
+}
+
+}
+
+/*パソコン用表示*/
+@media (min-width:960px){
+.mobile{
+  display:none !important;
+}
+
+/*最初に表示したときに、解説や結果が出ないようにする。*/
+#result,.correctCircle,.uncorrectCircle,.explain_sentence{
+  display:none;
+}
+/*背景を表示*/
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background-image: url("/images/pc-images/background.png");
+
+}
+/*ページタイトルを装飾*/
+#page-title {
+    width:500px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #707070;/*文字色*/
+    background-color: #fff;
+    border: solid 3px #dec6a0;/*線*/
+    border-radius: 25px;/*角の丸み*/
+    text-align: center;
+}
+/*クイズ問題の装飾*/
+.quizTitle {
+    width:1000px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #707070;/*文字色*/
+    background-color: #fff;
+    border: solid 3px #a89e9e;/*線*/
+}
+.quizNumber p{
+  font-size:30px;
+  margin-left:10px;
+  margin-top:5px;
+}
+.quizSentence p{
+  margin-top:0;
+  margin-left:10px;
+}
+/*吹き出しの位置を調整*/
+.quiz{
+  position:relative;
+  margin-top:150px;
+}
+.correctCircle,.uncorrectCircle{
+  position:absolute;
+  top:-110px;
+  left:165px;
+}
+
+#radioForm{
+  width:100%;
+}
+.radioButtons{
+    width:1100px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+}
+/*説明文を紹介*/
+.explain_sentence{
+  margin: 10px auto;
+	padding: 5px 10px;
+	width:750px;
+	background: #fff;
+	border: dashed 2px #ec78ab;
+	border-radius: 25px;
+	color: #a89e9e;
+	font-size:15px;
+}
+
+/*ラジオボタンの装飾*/
+.radio-inline__input {
+  display:none;
+}
+
+.radio-inline__label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 10px auto;
+  width:300px;
+  text-align: center;
+  border: solid 3px #85c671;
+  border-radius: 30px;
+  background: #fff;
+  color: #707070;
+  text-shadow: 0 0 1px rgba(0,0,0,.7);
+}
+
+.radio-inline__input:checked + .radio-inline__label {
+  background: #85c671;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0,0,0,.7);
+}
+
+.radio-inline__input:focus + .radio-inline__label {
+  outline-color: #4D90FE;
+  outline-offset: -2px;
+  outline-width: 5px;
+}
+
+.explain_blue{
+  background-color: lightblue;
+}
+.explain_red{
+  background-color: pink;
+}
+#result{
+  margin: 10px auto;
+	padding: 5px 10px;
+	width:750px;
+	background: #dec6a0;
+	border: none;
+	border-radius: 25px;
+	color: #fff;
+	font-weight: bold;
+	font-size:30px;
+	text-align: center;
+}
+#check {
+  margin: 100px auto;
+	width:120px;
+}
+#check a{
+  margin: 10px auto;
+	padding: 5px 10px;
+  color: #fff;
+  background-color: #dec6a0;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.back{
+    margin-top: 40px;
+    text-align: center;
+}
+.back a{
+  text-decoration: none;
+}
+}
