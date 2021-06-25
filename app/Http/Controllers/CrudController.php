@@ -30,14 +30,8 @@ class CrudController extends Controller
 	
 	public function update(Request $request, $quizID)
 	{
-		dd($request);
 		$quiz = Quiz::findOrFail($quizID);
-		if($request->category_id >= 10){
-			$quiz->category_id = ($request->category_id+5)/10;
-
-		}else{
-			$quiz->category_id = $request->category_id;
-		}
+		$quiz->category_id = $request->category_id;
 		$quiz->title = $request->title;
 		$quiz->correct = $request->correct;
 		$quiz->uncorrect1 = $request->uncorrect1;
