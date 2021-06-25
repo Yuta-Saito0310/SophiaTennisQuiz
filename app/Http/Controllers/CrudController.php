@@ -32,7 +32,12 @@ class CrudController extends Controller
 	{
 		dd($request);
 		$quiz = Quiz::findOrFail($quizID);
-		$quiz->category_id = $request->category_id;
+		if($request->category_id >= 10){
+			$quiz->category_id = ($request->category_id+5)/10;
+
+		}else{
+			$quiz->category_id = $request->category_id;
+		}
 		$quiz->title = $request->title;
 		$quiz->correct = $request->correct;
 		$quiz->uncorrect1 = $request->uncorrect1;
