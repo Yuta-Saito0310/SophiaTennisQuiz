@@ -21,7 +21,7 @@
                     <label>カテゴリ<span class="attention">必須</span></label>
                     <select class="form-control" id="category" name="category_id">
                       @foreach ($categories as $category)
-                      <option value={{ ($category->id +5)/10 }} {{ $category->id == old('category_id',$quiz->category_id) ? 'selected' : '' }}>
+                      <option value={{ $category->id  }} {{ $category->id == old('category_id',$quiz->category_id) ? 'selected' : '' }}>
                         {{ $category->name }}
                       </option>
                       @endforeach
