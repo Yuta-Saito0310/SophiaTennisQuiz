@@ -27,11 +27,7 @@ class CreateQuizzesTable extends Migration
             $table->timestamp('updated_at')->useCurrent();
 
             
-            $table->foreign('category_id')
-                ->references('id')
-                ->on('categories')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
+           
         });
     }
 
