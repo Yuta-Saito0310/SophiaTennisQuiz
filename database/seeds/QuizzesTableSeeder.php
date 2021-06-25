@@ -11,6 +11,7 @@ class QuizzesTableSeeder extends Seeder
      */
     public function run()
     {
+    	DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         $allquizzes = [
 			$quiz1 = [
 				'title' => '「一期一笑」のコピーで広告を打っているのはどこの会社？',
@@ -50,5 +51,6 @@ class QuizzesTableSeeder extends Seeder
 		foreach ($allquizzes as $quiz) {
 			DB::table('quizzes')->insert($quiz);
 		}
+		DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }
