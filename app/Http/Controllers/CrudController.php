@@ -22,7 +22,7 @@ class CrudController extends Controller
 	
 	public function edit($quizID){
 	    $quiz = Quiz::find($quizID);
-	    dd($quiz);
+	    //dd($quiz);
 	    $categories=Category::all();
 	    
 	    return view('crud.edit', ['quiz'=>$quiz, 'categories'=>$categories]);
@@ -30,6 +30,7 @@ class CrudController extends Controller
 	
 	public function update(Request $request, $quizID)
 	{
+		dd($request);
 		$quiz = Quiz::findOrFail($quizID);
 		$quiz->category_id = $request->category_id;
 		$quiz->title = $request->title;
