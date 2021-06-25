@@ -14,6 +14,7 @@ class QuizzesTableSeeder extends Seeder
     	DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         $allquizzes = [
 			$quiz1 = [
+				'id' => 1,
 				'title' => '「一期一笑」のコピーで広告を打っているのはどこの会社？',
 				'correct' => 'アリシアクリニック',
 				'uncorrect1' => '微笑整形外科',
@@ -22,6 +23,7 @@ class QuizzesTableSeeder extends Seeder
 				'category_id' => '3',
 			],
 			$quiz2 = [
+				'id' => 2,
 				'title' => '電子書籍が登場したことによって「紙の本」という言葉が生まれた。このように、新しく登場したモノ・コトに対応して生み出された呼び名を何という？',
 				'correct' => 'レトロニム',
 				'uncorrect1' => 'レトリック',
@@ -30,6 +32,7 @@ class QuizzesTableSeeder extends Seeder
 				'category_id' => '3',
 			],
 			$quiz3 = [
+				'id' => 3,
 				'title' => '人生の時期を表す言葉として、陰陽思想では若い順番に青春、朱夏、白秋がある。白秋に続く時期は何という？？',
 				'correct' => '玄冬',
 				'uncorrect1' => '黒冬',
@@ -37,7 +40,8 @@ class QuizzesTableSeeder extends Seeder
 				'explain_sentence' => '青春という言葉も、陰陽思想から作られていたって何か意外ですよね',
 				'category_id' => '3',
 			],
-			$quiz2 = [
+			$quiz4 = [
+				'id' => 4,
 				'title' => 'ONE PIECEのクロコダイルが結成した組織の名前は？',
 				'correct' => 'バロックワークス',
 				'uncorrect1' => 'ラコステ',
