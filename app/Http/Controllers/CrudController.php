@@ -22,6 +22,7 @@ class CrudController extends Controller
 	
 	public function edit($quizID){
 	    $quiz = Quiz::find($quizID);
+	    dd($quiz);
 	    $categories=Category::all();
 	    
 	    return view('crud.edit', ['quiz'=>$quiz, 'categories'=>$categories]);

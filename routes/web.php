@@ -30,3 +30,4 @@ Route::get('/crud/index2021/category/create', 'CrudController@categoryCreate');
 Route::post('/crud/index2021/category/store', 'CrudController@categoryStore');
 Route::get('/crud/index2021/category/edit/{id?}', 'CrudController@categoryEdit');
 Route::put('/crud/index2021/category/update/{id?}', 'CrudController@categoryUpdate');
+
