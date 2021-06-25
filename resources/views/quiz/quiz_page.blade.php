@@ -14,7 +14,7 @@
     </head>
     <body>
         <div id="page-title">
-                <h1>{{$category}}クイズ</h1>
+                <h1>クイズページ</h1>
         </div>
         <form id=radioForm>
                 
