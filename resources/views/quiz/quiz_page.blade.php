@@ -55,7 +55,7 @@
                 <label class="radio-inline__label" for="{{$quiz->id}} {{$quizArray[2]}}">{{$quizArray[2]}}</label>
             </div>
                     
-                <input type="hidden" id="{{"hiddenCorrect".$loop->index}}" value={{$quiz->correct}}>
+                <input type="hidden" id="{{"hiddenCorrect".$loop->index}}" value="{{$quiz->correct}}">
                 <div class="explain_sentence">
                     <p>{{$quiz->explain_sentence}}</p>
                 </div>
