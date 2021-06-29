@@ -21,9 +21,9 @@
             </div>
         </div>
         <div id="category-names" class="pc">
-            <h2 class="name">仕事</h2>
-            <h2 class="name">審判</h2>
-            <h2 class="name">雑学</h2>
+            <h2 id ="work" class="name">仕事</h2>
+            <h2 id="rule" class="name">審判</h2>
+            <h2 id="trivia" class="name">雑学</h2>
         </div>
         <div id="buttons">
             <!--PC画像-->

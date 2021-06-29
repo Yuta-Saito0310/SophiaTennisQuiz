@@ -50,7 +50,15 @@ body {
 }
 .name{
 	font-size: 30px;
-	color:#a89e9e;
+}
+#work{
+    color:#ec78ab;
+}
+#rule{
+    color:#e8c043;
+}
+#trivia{
+    color:#2bada9;
 }
 .explanation{
     padding: 5px 10px;
@@ -130,7 +138,15 @@ body {
     margin: 10px auto;
 	padding: 5px 10px;
 	font-size: 60px;
-	color:#a89e9e;
+}
+#work{
+    color:#ec78ab;
+}
+#rule{
+    color:#e8c043;
+}
+#trivia{
+    color:#2bada9;
 }
 #buttons{
     display:flex;

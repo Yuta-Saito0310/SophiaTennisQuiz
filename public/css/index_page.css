@@ -15,7 +15,7 @@ body {
 }
 #challengeImage{
   text-align: center;
-  margin-top: -20px;
+  margin-top: -25px;
 }
 #about-quiz-content{
     width:100%;
@@ -23,8 +23,7 @@ body {
 #quiz-content-title{
     font-family: "メイリオ";
     font-size:25px;
-    width: 370px;
-    margin:0 auto;
+    text-align: center;
 }
 
 #quiz-explain{
