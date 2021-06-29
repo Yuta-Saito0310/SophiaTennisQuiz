@@ -80,7 +80,7 @@ class CrudController extends Controller
 
 		$quiz->save();
 
-		return redirect('/crud/index2021/edit/'. $quiz->id);
+		return redirect('/crud/index2021/');
 	}
 	 public function categoryIndex()
 	{
