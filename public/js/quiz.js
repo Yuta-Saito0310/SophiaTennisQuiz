@@ -11,6 +11,8 @@ const uncorrectCircle_Array = Array.from(uncorrectCircle);
 const result = document.getElementById("result");
 const result_score = document.getElementById("score");
 
+const rechallenge = document.getElementById("rechallenge");
+
 const quiz = document.getElementsByClassName("quizTitle");
 const quiz_Array = Array.from(quiz);
 
@@ -28,6 +30,7 @@ function answerCheck(){for(let round=0; round<quiz.length; round++){
                      checkValue = radioName[select].value;
                      if(checkValue == hiddenCorrect){
                         correctCircle_Array[round].style.display="block";
+                        explain_sentence_Array[round].style.display="block";
                         quiz_Array[round].style.color = '#fff'; 
                         quiz_Array[round].style.backgroundColor = '#73bbde'
                         score++;
@@ -41,7 +44,8 @@ function answerCheck(){for(let round=0; round<quiz.length; round++){
                  }
             }
     }
-    result_score.innerHTML = score + '/' + quiz.length
+    result_score.innerHTML = score + '/' + quiz.length;
     result.style.display = "block";
+    rechallenge.style.display ="block";
     check_btn.style.display = "none";
 }

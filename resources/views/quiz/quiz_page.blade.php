@@ -74,6 +74,9 @@
              </div>
              
              </form>
+             <div id="rechallenge">
+                 <a href="/categories/{{$categoryID}}">もう一度クイズに挑戦する</a>
+             </div>
              <p class="back">[<a href="/categories">カテゴリーページへ</a>]</p>
              
 

@@ -3,7 +3,7 @@
 .pc{
   display:none !important;
 }
-#result,.correctCircle,.uncorrectCircle,.explain_sentence{
+#result,#rechallenge,.correctCircle,.uncorrectCircle,.explain_sentence{
   display:none;
 }
 body {
@@ -123,8 +123,24 @@ body {
   text-align: center;
   text-decoration: none;
 }
+#rechallenge{
+  margin: 10px auto;
+	padding: 5px 10px;
+	width:150px;
+	border: solid 3px #ec78ab;/*線*/
+	background: #fff;
+	border-radius: 25px;
+	font-weight: bold;
+	font-size:20px;
+	text-align: center;
+}
+#rechallenge a{
+  text-decoration: none;
+  color:#ec78ab;
+}
 .back{
     margin-top: 40px;
+    margin-bottom: 30px;
     text-align: center;
 }
 .back a{
@@ -140,7 +156,7 @@ body {
 }
 
 /*最初に表示したときに、解説や結果が出ないようにする。*/
-#result,.correctCircle,.uncorrectCircle,.explain_sentence{
+#result,#rechallenge,.correctCircle,.uncorrectCircle,.explain_sentence{
   display:none;
 }
 /*背景を表示*/
@@ -272,6 +288,21 @@ body {
   border-radius: 25px;
   text-align: center;
   text-decoration: none;
+}
+#rechallenge{
+  margin: 10px auto;
+	padding: 5px 10px;
+	width:370px;
+	border: solid 3px #ec78ab;/*線*/
+	background: #fff;
+	border-radius: 25px;
+	font-weight: bold;
+	font-size:30px;
+	text-align: center;
+}
+#rechallenge a{
+  text-decoration: none;
+  	color: #ec78ab;
 }
 .back{
     margin-top: 40px;

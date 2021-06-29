@@ -21,6 +21,7 @@ class QuizController extends Controller
                     ->get();
                     
         return view('quiz.quiz_page')->with([
+                'categoryID'=> $categoryID,
                 'quizzes'=> $quizzes,
             ]);
     }
