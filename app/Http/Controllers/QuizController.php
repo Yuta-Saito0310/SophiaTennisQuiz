@@ -19,6 +19,7 @@ class QuizController extends Controller
                     ->inRandomOrder()
                     //->take(3)
                     ->get();
+        dd($quizzes);
                     
         return view('quiz.quiz_page')->with([
                 'categoryID'=> $categoryID,
