@@ -51,13 +51,13 @@ body {
 .name{
 	font-size: 30px;
 }
-#work{
+#mobile-work{
     color:#ec78ab;
 }
-#rule{
+#mobile-rule{
     color:#e8c043;
 }
-#trivia{
+#mobile-trivia{
     color:#2bada9;
 }
 .explanation{
@@ -139,13 +139,13 @@ body {
 	padding: 5px 10px;
 	font-size: 60px;
 }
-#work{
+#pc-work{
     color:#ec78ab;
 }
-#rule{
+#pc-rule{
     color:#e8c043;
 }
-#trivia{
+#pc-trivia{
     color:#2bada9;
 }
 #buttons{

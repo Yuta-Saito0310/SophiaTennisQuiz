@@ -21,9 +21,9 @@
             </div>
         </div>
         <div id="category-names" class="pc">
-            <h2 id ="work" class="name">仕事</h2>
-            <h2 id="rule" class="name">審判</h2>
-            <h2 id="trivia" class="name">雑学</h2>
+            <h2 id ="pc-work" class="name">仕事</h2>
+            <h2 id="pc-rule" class="name">審判</h2>
+            <h2 id="pc-trivia" class="name">雑学</h2>
         </div>
         <div id="buttons">
             <!--PC画像-->
@@ -32,19 +32,19 @@
                 <input type="image" src="/images/pc-images/greenButton.png" onclick="location.href='/categories/3'" class="pc" >
         </div>
         <div id="mobile-buttons" class="mobile">
-            <h2 class="name">仕事</h2>
+            <h2 id="mobile-work" class="name">仕事</h2>
             <input type="image" src="/images/mobile-images/pinkButton.png" onclick="location.href='/categories/2'" class="mobile" >
             <div class="explanation">
                 <p >1年生の仕事について出題します。</p>
             </div>
             
-            <h2 class="name">審判</h2>
+            <h2 id="mobile-rule" class="name">審判</h2>
             <input type="image" src="/images/mobile-images/yellowButton.png" onclick="location.href='/categories/1'" class="mobile">
             <div class="explanation">
                 <p >リーグ戦の審判のルールや、テニスのルールについて出題します。</p>
             </div>
             
-            <h2 class="name">雑学</h2>
+            <h2 id="mobile-trivia" class="name">雑学</h2>
             <input type="image" src="/images/mobile-images/greenButton.png" onclick="location.href='/categories/3'" class="mobile">
             <div class="explanation">
                 <p >部活動とは一切関係ない雑学を出題します。暇潰しに使って下さい。</p>
